@@ -8,6 +8,9 @@ A web-based application for managing chemical supplies inventory. Features inclu
 - Save and refresh data
 - Responsive design with CSS styling
 
+# Deployed Link
+https://iitb-assignment-vedant.vercel.app/
+
 ![Screenshot of Chemical Supplies Management application](./screenshot.png)
 
 ## Technologies Used
