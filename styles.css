@@ -1,0 +1,134 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #efeded; 
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-weight: 500;
+    align-self: flex-start;
+    margin-left: 10%;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+.toolbar button {
+    margin-left: 5px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.delete-button {
+    color: red;
+}
+
+.table-container {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    width: 80%;
+    max-width: 80%;
+    margin: 0 auto;
+    position: relative;
+    background-color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+th, td {
+    padding: 6px;
+    text-align: left;
+}
+
+th {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+tr.selected {
+    background-color: #e6e6fa;
+}
+
+.checkbox-column, .id-column {
+    width: 30px;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.boxed-input {
+    border: 1px solid #ddd;
+    padding: 2px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.chemical-name-column {
+    width: 25%;
+    position: relative;
+}
+
+.chemical-name-column::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: 0;
+    bottom: -10px;
+    width: 1px;
+    background-color: #ddd;
+}
+
+thead {
+    border-bottom: 1px solid #ddd;
+}
+
+thead tr {
+    position: relative;
+}
+
+thead tr::after {
+    content: '';
+    position: absolute;
+    left: -10px;
+    right: -10px;
+    bottom: 0;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.unit {
+    color: grey;
+    font-weight: normal;
+}
+
+.boxed-cell {
+    padding: 0;
+}
+
+.boxed-cell input {
+    border: 1px solid #ddd;
+    padding: 5px;
+    width: calc(100% - 12px);
+}

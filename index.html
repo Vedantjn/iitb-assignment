@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemical supplies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Chemical supplies</h1>
+    <div class="toolbar">
+        <div>
+            <button onclick="addRow()">➕</button>
+            <button onclick="moveRowDown()">⬇️</button>
+            <button onclick="moveRowUp()">⬆️</button>
+            <button class="delete-button" onclick="deleteRow()">🗑️</button>
+            <button onclick="refreshData()">🔄</button>
+            <button onclick="saveData()">💾</button>
+        </div>
+    </div>
+    <div class="table-container">
+        <table id="chemicalTable">
+            <thead>
+                <tr>
+                    <th class="checkbox-column">
+                        <input type="checkbox" id="selectAllCheckbox" onclick="toggleSelectAll(this)">
+                    </th>
+                    <th class="id-column"></th>
+                    <th class="chemical-name-column">Chemical name</th>
+                    <th>Vendor</th>
+                    <th>
+                        Density<br><span class="unit">g/m³</span>
+                    </th>
+                    <th>
+                        Viscosity<br><span class="unit">m²/s</span>
+                    </th>
+                    <th>Packaging</th>
+                    <th>Pack size</th>
+                    <th>Unit</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
